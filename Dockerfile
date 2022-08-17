@@ -9,7 +9,7 @@ ARG resetcache=1
 RUN cd / &&\
 	git clone https://github.com/Artezio/camunda-formio.git &&\
 	cd /camunda-formio && mvn clean install -Dmaven.test.skip=true && cd .. &&\
-	git clone https://github.com/Artezio/camunda-formio-springboot-example.git &&\
+	git clone https://github.com/srjohnsmi/camunda-formio-springboot-example.git &&\
 	cd /camunda-formio-springboot-example &&\
 	mvn clean package -Dmaven.test.skip=true
 
